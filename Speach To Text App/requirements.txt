@@ -1,0 +1,31 @@
+# Speech to Minutes App - 100% Local Hugging Face Models (Python 3.14 Compatible)
+# Nessuna API esterna richiesta - tutto viene eseguito localmente
+
+# Core ML - Hugging Face Transformers
+transformers>=4.30.0
+torch>=2.0.0
+accelerate>=0.20.0
+
+# Audio Processing (Python 3.14 Compatible)
+soundfile>=0.12.0
+cffi>=1.15.0  # Required by soundfile
+# Note: librosa non compatibile con Python 3.14, rimosso
+
+# Web Interface
+streamlit>=1.28.0
+plotly>=5.15.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Utilities (no external APIs needed)
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+
+# Optional: Development tools
+# jupyter>=1.0.0
+# notebook>=7.0.0
+
+# Note: librosa removed due to Python 3.14 incompatibility
+# Audio processing handled by soundfile + numpy for basic operations
